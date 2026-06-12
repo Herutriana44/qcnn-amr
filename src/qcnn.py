@@ -25,8 +25,8 @@ from qiskit_machine_learning.connectors import TorchConnector
 from sklearn.metrics import classification_report, confusion_matrix
 import json
 
-import tools
-import preprocess
+from src import tools
+from src import preprocess
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(current_dir)
