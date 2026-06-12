@@ -1,5 +1,5 @@
-import tools
-from tools import clean_seq, getDAC, list_to_string, string_to_list
+from src import tools
+from src.tools import clean_seq, getDAC, list_to_string, string_to_list
 import pandas as pd
 import re
 import os
