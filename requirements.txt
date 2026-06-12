@@ -1,0 +1,10 @@
+pandas
+numpy
+biopython
+PyBioMed
+torch
+scikit-learn
+pylatexenc
+qiskit
+qiskit-machine-learning
+matplotlib
