@@ -30,7 +30,6 @@ def run():
     df_seq = df_seq.drop(columns=['id'])
     df_seq = pd.concat([df_seq, split_id_data], axis=1)
     df_seq['species'] = df_seq['description'].apply(lambda x: re.search(r'\[(.*?)\]', x).group(1) if re.search(r'\[(.*?)\]', x) else None)
-    df_seq = df_seq.dropna(subset=['Resistance Mechanism'])
     df_seq = df_seq.reset_index(drop=True)
 
     df_seq['species'].value_counts().head(5).plot(kind='bar')
