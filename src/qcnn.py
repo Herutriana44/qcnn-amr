@@ -43,7 +43,7 @@ estimator = Estimator()
 os.makedirs(result_dir, exist_ok=True)
 
 def train():
-    df, df_seq, x, y = preprocess.run()
+    df, df_seq, x, y, y_map = preprocess.run()
 
     # We now define a two qubit unitary as defined in [3]
     def conv_circuit(params):

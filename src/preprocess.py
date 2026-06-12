@@ -73,4 +73,4 @@ def run():
     class_weights = [sum(num_label)/(total_label*num_label[i]) for i in range(len(num_label))]
     class_weights = torch.tensor(class_weights, dtype=torch.float32)
 
-    return df, df_seq, x, y
+    return df, df_seq, x, y, y_map
