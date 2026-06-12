@@ -244,10 +244,10 @@ def train():
     print(f"Saved y_map to: {ymap_path}")
 
     # 4. Save the combined Quantum Circuit (feature_map + ansatz) as QASM
-    circuit_qasm_path = os.path.join(output_folder, "hybrid_qcnn_circuit.qasm")
-    with open(circuit_qasm_path, "w") as f:
-        f.write(circuit.qasm())
-    print(f"Saved quantum circuit to: {circuit_qasm_path}")
+    # circuit_qasm_path = os.path.join(output_folder, "hybrid_qcnn_circuit.qasm")
+    # with open(circuit_qasm_path, "w") as f:
+    #    f.write(circuit.qasm())
+    # print(f"Saved quantum circuit to: {circuit_qasm_path}")
 
     # 5. Perform evaluation and save metrics
     model.eval() # Set model to evaluation mode
