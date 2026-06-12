@@ -9,3 +9,4 @@ qiskit
 qiskit-machine-learning
 matplotlib
 ipython
+openpyxl
