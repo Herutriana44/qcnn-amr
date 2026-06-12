@@ -8,3 +8,4 @@ pylatexenc
 qiskit
 qiskit-machine-learning
 matplotlib
+ipython
